@@ -3,115 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sportportalen - Liverpool, IFK & Granfeldt</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            background-color: #f0f0f0;
-            color: #333;
-        }
-
-        header {
-            background-color: #C8102E;
-            color: white;
-            padding: 2.5rem 0;
-            text-align: center;
-            border-bottom: 5px solid #F6EB61;
-        }
-
-        nav {
-            background: #222;
-            color: white;
-            display: flex;
-            justify-content: center;
-            padding: 12px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-        }
-
-        nav a:hover { color: #F6EB61; }
-
-        .container {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 30px;
-            background: white;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border-radius: 8px;
-        }
-
-        h2 { color: #C8102E; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-
-        /* IFK Göteborg Styling */
-        .ifk-section { border-left: 5px solid #004b96; padding-left: 20px; margin: 30px 0; }
-
-        /* Hjalmar Granfeldt Styling */
-        .player-card {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            padding: 25px;
-            margin: 20px 0;
-            border-radius: 10px;
-        }
-
-        .btn-container {
-            display: flex;
-            gap: 10px;
-            margin-top: 15px;
-            flex-wrap: wrap;
-        }
-
-        .btn-stats {
-            display: inline-block;
-            background-color: #005293; /* Warberg/Varla Blå */
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            font-size: 0.9rem;
-            transition: background 0.3s;
-        }
-
-        .btn-stats:hover { background-color: #003a69; }
-        
-        .btn-gothia { background-color: #e91e63; } /* Gothia Cup Rosa */
-        .btn-gothia:hover { background-color: #c2185b; }
-
-        .stats-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-
-        .stats-table th, .stats-table td {
-            padding: 12px;
-            border: 1px solid #eee;
-            text-align: left;
-        }
-
-        .stats-table th { background-color: #333; color: white; }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            background: #222;
-            color: #ccc;
-            margin-top: 50px;
-        }
-    </style>
+    <title>Sportportalen - LFC, IFK & Granfeldt</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -135,7 +28,7 @@
         </section>
 
         <section id="ifk" class="ifk-section">
-            <h2 style="color: #004b96;">IFK Göteborg</h2>
+            <h2 class="blue-text">IFK Göteborg</h2>
             <p>Mesta mästarna i svensk fotboll med två UEFA-cupguld i prisskåpet. En gigant i nordisk idrottshistoria.</p>
         </section>
 
@@ -147,10 +40,10 @@
                 <p>För att följa Hjalmars utveckling på planen, målstatistik och matchresultat kan du besöka följande officiella sidor:</p>
                 
                 <div class="btn-container">
-                    <a href="https://statistik.innebandy.se/" target="_blank" class="btn-stats">IBIS Statistik (Svensk Innebandy)</a>
+                    <a href="https://statistik.innebandy.se/" target="_blank" class="btn-stats">IBIS Statistik</a>
                     <a href="https://results.gothiainnebandycup.se/" target="_blank" class="btn-stats btn-gothia">Gothia Cup Stats</a>
                 </div>
-                <p style="font-size: 0.8rem; color: #666; margin-top: 10px;">* Sök på "Hjalmar Granfeldt" i databaserna för att se aktuell poängskörd.</p>
+                <p class="disclaimer">* Sök på "Hjalmar Granfeldt" i databaserna för aktuell statistik.</p>
             </div>
         </section>
 
@@ -177,18 +70,4 @@
                         <td>Uttagen i Hallands SM-trupp (P08)</td>
                     </tr>
                     <tr>
-                        <td>Warberg IC</td>
-                        <td>4 st SM-Guld (Innebandy)</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-    </div>
-
-    <footer>
-        <p>&copy; 2026 Sportportalen | Liverpool, Göteborg & Varberg/Kungsbacka</p>
-    </footer>
-
-</body>
-</html>
+                        <td>War
