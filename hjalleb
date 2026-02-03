@@ -1,12 +1,201 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
- <meta charset="UTF-8">
- <title>Axel F.s första Webb på Github</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Hemsida</title>
+    <style>
+        /* Här kan du lägga till enkel design (CSS) */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
- <h1>AI1 – Mitt projekt</h1>
- <p>Detta är en enkel webbsida publicerad januari med GitHub Pages.</p>
+
+    <header>
+        <h1>Välkommen till min hemsida</h1>
+    </header>
+
+    <main>
+        <h2>Om sidan</h2>
+        <p>Det här är grunden för din nya webbplats. Härifrån kan du börja bygga ut med mer text, bilder och länkar.</p>
+        
+        <ul>
+            <li>Punktlista 1</li>
+            <li>Punktlista 2</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Min Hemsida</p>
+    </footer>
+
 </body>
 </html>
 
+Självklart! Vi bygger vidare på den förra koden men anpassar den helt efter Liverpool FC. Jag har lagt till de klassiska färgerna (rött och guld), en navigationsmeny och strukturerat upp innehållet med klubbens historia och meriter.
+
+Här är den uppdaterade koden:
+
+HTML
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liverpool FC - You'll Never Walk Alone</title>
+    <style>
+        /* Färgtema: Liverpool Red och Gold */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #C8102E; /* Official Liverpool Red */
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 5px solid #F6EB61; /* Gold accent */
+        }
+
+        nav {
+            background: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #F6EB61;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .stats-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .stats-table th, .stats-table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .stats-table th {
+            background-color: #C8102E;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-style: italic;
+            background: #333;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>LIVERPOOL FOOTBALL CLUB</h1>
+        <p>ESTABLISHED 1892</p>
+    </header>
+
+    <nav>
+        <a href="#historia">Historia</a>
+        <a href="#meriter">Meriter</a>
+        <a href="#anfield">Anfield</a>
+    </nav>
+
+    <div class="container">
+        
+        <section id="historia">
+            <h2>The Reds - En stolt historia</h2>
+            <p>Liverpool FC bildades 1892 och spelar sina hemmamatcher på den världsberömda arenan <strong>Anfield</strong>. Klubben är känd för sin hängivna support och hymnen <em>"You'll Never Walk Alone"</em>.</p>
+        </section>
+
+        <hr>
+
+        <section id="meriter">
+            <h2>Klubbens Meriter</h2>
+            <p>Liverpool är en av världens mest framgångsrika klubbar. Här är ett urval av titlarna:</p>
+            
+            <table class="stats-table">
+                <thead>
+                    <tr>
+                        <th>Turnering</th>
+                        <th>Antal titlar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ligatitlar (England)</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>Champions League / Europacupen</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>FA-cupen</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Ligacupen (EFL Cup)</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="anfield" style="margin-top: 30px;">
+            <h2>Anfield Road</h2>
+            <p>Arenan har varit klubbens hem sedan starten. Den mest kända läktaren är <strong>The Kop</strong>, där de mest passionerade fansen skapar en atmosfär som skrämmer motståndarna.</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>"You'll Never Walk Alone" - 2026 LFC Fanpage</p>
+    </footer>
+
+</body>
+</html>
