@@ -1,34 +1,35 @@
-HTML
 <!DOCTYPE html>
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liverpool FC - You'll Never Walk Alone</title>
+    <title>LFC & Hjalmar Granfeldt - Warberg IC</title>
     <style>
-        /* Färgtema: Liverpool Red och Gold */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
-            background-color: #f9f9f9;
+            background-color: #f0f0f0;
             color: #333;
         }
 
         header {
-            background-color: #C8102E; /* Official Liverpool Red */
+            background-color: #C8102E;
             color: white;
-            padding: 2rem 0;
+            padding: 2.5rem 0;
             text-align: center;
-            border-bottom: 5px solid #F6EB61; /* Gold accent */
+            border-bottom: 5px solid #F6EB61;
         }
 
         nav {
-            background: #333;
+            background: #222;
             color: white;
             display: flex;
             justify-content: center;
-            padding: 10px;
+            padding: 12px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         nav a {
@@ -36,6 +37,8 @@ HTML
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
         }
 
         nav a:hover {
@@ -45,20 +48,53 @@ HTML
         .container {
             max-width: 900px;
             margin: 20px auto;
-            padding: 20px;
+            padding: 30px;
             background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #C8102E;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        /* Profil-sektion för Hjalmar */
+        .player-card {
+            background-color: #fdfdfd;
+            border-left: 5px solid #005293; /* Warberg-blå accent */
+            padding: 20px;
+            margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .player-info {
+            flex: 1;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #005293;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
         }
 
         .stats-table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            margin: 20px 0;
         }
 
         .stats-table th, .stats-table td {
             padding: 12px;
-            border: 1px solid #ddd;
+            border: 1px solid #eee;
             text-align: left;
         }
 
@@ -69,78 +105,27 @@ HTML
 
         footer {
             text-align: center;
-            padding: 20px;
-            font-style: italic;
-            background: #333;
-            color: white;
-            margin-top: 40px;
+            padding: 30px;
+            background: #222;
+            color: #ccc;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>LIVERPOOL FOOTBALL CLUB</h1>
-        <p>ESTABLISHED 1892</p>
+        <h1>LIVERPOOL FC & WARBERG IC</h1>
+        <p>Från Anfield till Sparbanken Wictory Center</p>
     </header>
 
     <nav>
-        <a href="#historia">Historia</a>
+        <a href="#lfc">Liverpool FC</a>
+        <a href="#hjalmar">Hjalmar Granfeldt</a>
         <a href="#meriter">Meriter</a>
-        <a href="#anfield">Anfield</a>
     </nav>
 
     <div class="container">
         
-        <section id="historia">
-            <h2>The Reds - En stolt historia</h2>
-            <p>Liverpool FC bildades 1892 och spelar sina hemmamatcher på den världsberömda arenan <strong>Anfield</strong>. Klubben är känd för sin hängivna support och hymnen <em>"You'll Never Walk Alone"</em>.</p>
-        </section>
-
-        <hr>
-
-        <section id="meriter">
-            <h2>Klubbens Meriter</h2>
-            <p>Liverpool är en av världens mest framgångsrika klubbar. Här är ett urval av titlarna:</p>
-            
-            <table class="stats-table">
-                <thead>
-                    <tr>
-                        <th>Turnering</th>
-                        <th>Antal titlar</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Ligatitlar (England)</td>
-                        <td>19</td>
-                    </tr>
-                    <tr>
-                        <td>Champions League / Europacupen</td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td>FA-cupen</td>
-                        <td>8</td>
-                    </tr>
-                    <tr>
-                        <td>Ligacupen (EFL Cup)</td>
-                        <td>10</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section id="anfield" style="margin-top: 30px;">
-            <h2>Anfield Road</h2>
-            <p>Arenan har varit klubbens hem sedan starten. Den mest kända läktaren är <strong>The Kop</strong>, där de mest passionerade fansen skapar en atmosfär som skrämmer motståndarna.</p>
-        </section>
-
-    </div>
-
-    <footer>
-        <p>"You'll Never Walk Alone" - 2026 LFC Fanpage</p>
-    </footer>
-
-</body>
-</html>
+        <section id="lfc">
+            <h2>Liverpool FC: Mer än
