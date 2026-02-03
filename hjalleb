@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LFC & Hjalmar Granfeldt - Warberg IC</title>
+    <title>Sportportalen - Liverpool, IFK & Granfeldt</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -37,13 +37,11 @@
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             text-transform: uppercase;
         }
 
-        nav a:hover {
-            color: #F6EB61;
-        }
+        nav a:hover { color: #F6EB61; }
 
         .container {
             max-width: 900px;
@@ -54,37 +52,43 @@
             border-radius: 8px;
         }
 
-        h2 {
-            color: #C8102E;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
+        h2 { color: #C8102E; border-bottom: 2px solid #eee; padding-bottom: 10px; }
 
-        /* Profil-sektion för Hjalmar */
+        /* IFK Göteborg Styling */
+        .ifk-section { border-left: 5px solid #004b96; padding-left: 20px; margin: 30px 0; }
+
+        /* Hjalmar Granfeldt Styling */
         .player-card {
-            background-color: #fdfdfd;
-            border-left: 5px solid #005293; /* Warberg-blå accent */
-            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 25px;
             margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .btn-container {
             display: flex;
+            gap: 10px;
+            margin-top: 15px;
             flex-wrap: wrap;
-            gap: 20px;
-            align-items: center;
         }
 
-        .player-info {
-            flex: 1;
-        }
-
-        .badge {
+        .btn-stats {
             display: inline-block;
-            background: #005293;
+            background-color: #005293; /* Warberg/Varla Blå */
             color: white;
-            padding: 3px 10px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            margin-bottom: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background 0.3s;
         }
+
+        .btn-stats:hover { background-color: #003a69; }
+        
+        .btn-gothia { background-color: #e91e63; } /* Gothia Cup Rosa */
+        .btn-gothia:hover { background-color: #c2185b; }
 
         .stats-table {
             width: 100%;
@@ -98,10 +102,7 @@
             text-align: left;
         }
 
-        .stats-table th {
-            background-color: #C8102E;
-            color: white;
-        }
+        .stats-table th { background-color: #333; color: white; }
 
         footer {
             text-align: center;
@@ -115,12 +116,13 @@
 <body>
 
     <header>
-        <h1>LIVERPOOL FC & WARBERG IC</h1>
-        <p>Från Anfield till Sparbanken Wictory Center</p>
+        <h1>SPORTPORTALEN</h1>
+        <p>Liverpool FC • IFK Göteborg • Hjalmar Granfeldt</p>
     </header>
 
     <nav>
         <a href="#lfc">Liverpool FC</a>
+        <a href="#ifk">IFK Göteborg</a>
         <a href="#hjalmar">Hjalmar Granfeldt</a>
         <a href="#meriter">Meriter</a>
     </nav>
@@ -128,4 +130,65 @@
     <div class="container">
         
         <section id="lfc">
-            <h2>Liverpool FC: Mer än
+            <h2>Liverpool FC</h2>
+            <p>En av världens mest anrika klubbar med en supporterskara som aldrig lämnar laget ensamma.</p>
+        </section>
+
+        <section id="ifk" class="ifk-section">
+            <h2 style="color: #004b96;">IFK Göteborg</h2>
+            <p>Mesta mästarna i svensk fotboll med två UEFA-cupguld i prisskåpet. En gigant i nordisk idrottshistoria.</p>
+        </section>
+
+        <section id="hjalmar">
+            <h2>Profil: Hjalmar Granfeldt</h2>
+            <div class="player-card">
+                <p><strong>Hjalmar Granfeldt</strong> (född 2008) är en talangfull innebandyspelare som representerar både <strong>Varla IBK</strong> och <strong>Warberg IC</strong>. Han är dessutom uttagen i Hallands SM-trupp för P08.</p>
+                
+                <p>För att följa Hjalmars utveckling på planen, målstatistik och matchresultat kan du besöka följande officiella sidor:</p>
+                
+                <div class="btn-container">
+                    <a href="https://statistik.innebandy.se/" target="_blank" class="btn-stats">IBIS Statistik (Svensk Innebandy)</a>
+                    <a href="https://results.gothiainnebandycup.se/" target="_blank" class="btn-stats btn-gothia">Gothia Cup Stats</a>
+                </div>
+                <p style="font-size: 0.8rem; color: #666; margin-top: 10px;">* Sök på "Hjalmar Granfeldt" i databaserna för att se aktuell poängskörd.</p>
+            </div>
+        </section>
+
+        <section id="meriter">
+            <h2>Meriter & Snabbfakta</h2>
+            <table class="stats-table">
+                <thead>
+                    <tr>
+                        <th>Organisation</th>
+                        <th>Viktig Merit/Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Liverpool FC</td>
+                        <td>6 st Champions League-titlar</td>
+                    </tr>
+                    <tr>
+                        <td>IFK Göteborg</td>
+                        <td>18 st SM-Guld & 2 st UEFA-cupvinster</td>
+                    </tr>
+                    <tr>
+                        <td>Hjalmar Granfeldt</td>
+                        <td>Uttagen i Hallands SM-trupp (P08)</td>
+                    </tr>
+                    <tr>
+                        <td>Warberg IC</td>
+                        <td>4 st SM-Guld (Innebandy)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sportportalen | Liverpool, Göteborg & Varberg/Kungsbacka</p>
+    </footer>
+
+</body>
+</html>
